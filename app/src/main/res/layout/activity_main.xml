@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/graylight"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="184dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/students" />
+    <TextView
+        android:layout_width="304dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#8C8C8C">
+
+        <EditText
+            android:id="@+id/txtusernamme"
+            android:layout_width="304dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="#F8F5F5"
+            android:textSize="15dp"
+            android:ems="10"
+            android:hint="Username"
+            android:textColor="@color/black"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_input_layout"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#8C8C8C">
+
+        <EditText
+            android:id="@+id/txtpass"
+            android:layout_width="304dp"
+            android:layout_height="60dp"
+            android:radius="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="#F8F5F5"
+            android:ems="10"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnstudent"
+        android:layout_width="304dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Connexion" />
+
+    <TextView
+        android:id="@+id/txterror"
+        android:layout_width="304dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/txtcharge"
+        android:layout_width="304dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/about"
+        android:layout_width="224dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:onClick="about"
+        android:src="@drawable/sdevelopper" />
+</LinearLayout>
